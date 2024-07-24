@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+  
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object</title>
+    <!-- <script>
+      const pet = {
+        name: "구름",
+        eat: function (food) {
+          alert(this.name + "은/는" + food + "을/를 먹습니다.");
+        },
+      };
+
+      pet.eat("밥");
+    </script>
+
+    <script>
+      const student = {};
+      student.이름 = "윤인성";
+      student.취미 = "악기";
+      student.장래희망 = "생명공학자";
+
+      console.log(JSON.stringify(student, null, 2));
+    </script>
+
+    <script>
+        //객체 선언
+      const student = {};
+      student.이름 = "윤인성";
+      student.취미 = "악기";
+      student.장래희망 = "생명공학자";
+
+      delete student.장래희망; // 객체속성 하나 제거
+
+      console.log(JSON.stringify(student, null, 2)); // 출력
+    </script>
+
+    <script>
+      const test = {
+        a: function () {
+          console.log(this);
+        },
+        b: () => {
+          console.log(this);
+        },
+      };
+
+      test.a();
+      test.b();
+    </script>
+
+    <script>
+      Number.prototype.power = function (n = 2) {
+        return this.valueOf() ** n;
+      };
+
+      const a = 12;
+      console.log("a.power():", a.power());
+      console.log("a.power(3):", a.power(3));
+      console.log("a.power(4):", a.power(4));
+    </script>
+
+    <script>
+      String.prototype.contain = function (data) {
+        return this.indexOf(data) >= 0;
+      };
+
+      Array.prototype.contain = function (data) {
+        return this.indexOf(data) >= 0;
+      };
+
+      const aa = "안녕하세요";
+      console.log("안녕 in 안녕하세요:", aa.contain("안녕"));
+      console.log("없음 in 안녕하세요:", aa.contain("없음"));
+
+      const b = [273, 32, 103, 57, 52];
+      console.log("273 in [273,32,103,57,52]:", b.contain(273));
+      console.log("0 in [273,32,103,57,52]:", b.contain(0));
+    </script>
+
+    <script>
+      const data = [
+        {
+          name: "혼자 공부하는 파이썬",
+          price: 18000,
+          pubilsher: "한빛 미디어",
+        },
+        {
+          name: "HTML5 웹 프로그래밍 입문",
+          price: 26000,
+          pubilsher: "한빛 미디어",
+        },
+      ];
+
+      console.log(JSON.stringify(data));
+      console.log(JSON.stringify(data, null, 2));
+    </script>
+    <script>
+      const data2 = [
+        {
+          name: "혼자 공부하는 파이썬",
+          price: 18000,
+          pubilsher: "한빛 미디어",
+        },
+        {
+          name: "HTML5 웹 프로그래밍 입문",
+          price: 26000,
+          pubilsher: "한빛 미디어",
+        },
+      ];
+      const json = JSON.stringify(data2);
+      console.log(json);
+
+      console.log(JSON.parse(json));
+    </script>
+
+    <script>
+      const num = Math.random();
+
+      console.log("#랜덤한 숫자");
+      console.log("0~1 사이의 랜덤한 숫자:", num);
+      console.log("");
+
+      console.log("#랜덤한 숫자 범위 확대");
+      console.log("0~10 사이의 랜덤한 숫자:", num * 10);
+      console.log("0~50 사이의 랜덤한 숫자:", num * 50);
+      console.log("");
+
+      console.log("#랜덤한 숫자 범위 이동");
+      console.log("-5~5 사이의 랜덤한 숫자:", num * 10 - 5);
+      console.log("-25~25 사이의 랜덤한 숫자:", num * 50 - 25);
+      console.log("");
+
+      console.log("#랜덤한 정수 숫자");
+      console.log("-5~5 사이의 랜덤한 정수 숫자:", Math.floor(num * 10 - 5));
+      console.log("-25~25 사이의 랜덤한 정수 숫자:", Math.floor(num * 50 - 25));
+    </script> -->
+    <script src="Object.js"></script>
+    <!-- <script>
+        console.log("#main.html의 script태그")
+        console.log("sample값:",sample)
+    </script> -->
+    <!-- <script>
+        const Object2 = {
+            name:"혼자 공부하는 파이썬",
+            price:18000,
+            pubilsher:"한빛 미디어"
+        }
+
+        const {name,price} = Object2
+        console.log("#속성이름 그래도 꺼내서 출력하기")
+        console.log(name,price)
+        console.log("")
+
+        const {a2=name, b2=price, } = Object2
+        console.log("#다른 이름으로 속성 꺼내서 출력하기")
+        console.log(a2,b2)
+    </script> -->
+
+    <!-- <script>
+        const 물건_200301 = ["우유","식빵"]
+        const 물건_200302 = 물건_200301
+        물건_200302.push("고구마")
+        물건_200302.push("토마토")
+
+        console.log(물건_200301)
+        console.log(물건_200302)
+    </script> -->
+
+<!-- <script>
+    const 물건_200301 = ["우유","식빵"]
+    const 물건_200302 = [물건_200301]
+    물건_200302.push("고구마")
+    물건_200302.push("토마토")
+
+    console.log(물건_200301)
+    console.log(물건_200302)
+</script> -->
+
+<!-- <script>
+    const 물건_200301 = ["우유","식빵"]
+    const 물건_200302 = ["고구마",물건_200301,"토마토"]
+
+    console.log(물건_200301)
+    console.log(물건_200302)
+</script> -->
+
+<!-- <script>
+    const 구름 = {
+        이름 : "구름",
+        나이 : 6,
+        종족 : "강아지"
+    }
+    const 별 = {...구름}
+    별.이름 = "별" 
+    별.나이 = 1 
+    
+
+    console.log(JSON.stringify(구름))
+    console.log(JSON.stringify(별))
+</script> -->
+
+<!-- <script>
+    const 구름 = {
+        이름 : "구름",
+        나이 : 6,
+        종족 : "강아지"
+    }
+    const 별 = {...구름,
+    이름 : "별", // 구름의 기존속성 덮어씀
+    나이 : 1, // 구름의 기존속성 덮어씀
+    예방접종 : true
+    }
+    
+
+    console.log(JSON.stringify(구름))
+    console.log(JSON.stringify(별))
+</script> -->
+
+  </head>
+  <body></body>
+</html>
